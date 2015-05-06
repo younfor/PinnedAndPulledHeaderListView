@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.android.pinnedheader.PinnedHeaderExpandableListView
+            android:id="@+id/explistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:groupIndicator="@null"
+            android:scrollbars="vertical"
+            android:scrollingCache="true" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
